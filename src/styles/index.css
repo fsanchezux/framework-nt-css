@@ -1,0 +1,7 @@
+/*
+ * framework-nt-css · estilos base
+ * Los proyectos SOLO importan este archivo (`@import "framework-nt-css/styles.css";`).
+ * Tailwind se resuelve desde aquí, así que el estilo vive en el framework y no en cada proyecto.
+ */
+@import "tailwindcss";
+@import "./framework.css";

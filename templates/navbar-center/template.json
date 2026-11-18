@@ -1,0 +1,27 @@
+{
+  "$schema": "../../references/template.schema.json",
+  "id": "navbar-center",
+  "name": "Navbar centrada",
+  "version": "1.0.0",
+  "contract": 1,
+  "description": "Cabecera fija con la navegación principal centrada en una pastilla (entornos o secciones), marca a la izquierda y cuenta/acciones a la derecha. El resto de la navegación, el panel y el pie van en un cajón lateral. Más aire para el contenido; ideal para webs y apps con pocas secciones.",
+  "bestFor": ["landing + app", "apps con pocas secciones", "portales", "contenido a pantalla completa"],
+  "layout": "topbar-center",
+  "mobile": "La pastilla central baja a una segunda fila; el cajón contiene toda la navegación.",
+  "slots": {
+    "brand": "Cabecera, izquierda (y arriba del cajón).",
+    "modes": "Pastilla centrada en la cabecera.",
+    "nav": "Primer apartado: subnavegación centrada bajo la cabecera (o en la pastilla si no hay modes). Todos los apartados: cajón.",
+    "panel": "Cajón lateral, debajo de nav.",
+    "footer": "Pie del cajón lateral.",
+    "user": "Cabecera, derecha (solo foto, menú desplegable).",
+    "actions": "Cabecera, derecha.",
+    "content": "Columna central de hasta 1180 px bajo la cabecera."
+  },
+  "options": {
+    "contentWidth": { "type": "number", "default": 1180, "description": "Ancho máximo del contenido (px)." },
+    "gradient": { "type": "boolean", "default": true, "description": "Degradado de marca de fondo." },
+    "subnav": { "type": "boolean", "default": true, "description": "Mostrar la fila de subnavegación cuando hay modes." }
+  },
+  "motion": "Tras la precarga: la cabecera cae desde arriba, la pastilla central crece con rebote y la subnavegación aparece."
+}

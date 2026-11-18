@@ -1,0 +1,27 @@
+{
+  "$schema": "../../references/template.schema.json",
+  "id": "sidebar",
+  "name": "Sidebar (Hoopbase)",
+  "version": "1.0.0",
+  "contract": 1,
+  "description": "Estructura de Hoopbase: barra lateral fija a la izquierda con marca, navegación, panel y cuenta; pastilla de entornos flotando arriba en el centro; degradado de marca de fondo. Ideal para apps con mucha navegación (listas, conversaciones, carpetas).",
+  "bestFor": ["dashboards", "apps con mucha navegación", "herramientas internas", "apps con chat/IA"],
+  "layout": "sidebar-left",
+  "mobile": "Cajón lateral que se abre con un botón flotante arriba a la izquierda.",
+  "slots": {
+    "brand": "Arriba de la barra lateral.",
+    "modes": "Pastilla flotante centrada arriba del contenido.",
+    "nav": "Barra lateral (apartados con cabecera, plegables).",
+    "panel": "Barra lateral, debajo de nav.",
+    "footer": "Pie de la barra lateral.",
+    "user": "Pie de la barra lateral (foto + nombre, menú hacia arriba).",
+    "actions": "Arriba a la derecha del contenido, a la altura de la pastilla.",
+    "content": "Columna central de hasta 1180 px."
+  },
+  "options": {
+    "width": { "type": "number", "default": 272, "description": "Ancho de la barra lateral (px)." },
+    "contentWidth": { "type": "number", "default": 1180, "description": "Ancho máximo del contenido (px)." },
+    "gradient": { "type": "boolean", "default": true, "description": "Degradado de marca de fondo." }
+  },
+  "motion": "Tras la precarga: la barra entra desde la izquierda con su contenido escalonado y la pastilla baja desde arriba. Al cambiar de entorno la navegación vuelve a entrar."
+}

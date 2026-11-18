@@ -1,0 +1,26 @@
+{
+  "$schema": "../references/theme.schema.json",
+  "id": "paper",
+  "name": "Paper (claro)",
+  "description": "Versión clara: fondo hueso, tinta casi negra y acento naranja.",
+  "scheme": "light",
+  "colors": {
+    "canvas": "#f4f3ef",
+    "sidebar": "#ebe9e3",
+    "paper": "#ffffff",
+    "ink": "#151515",
+    "muted": "#6b6a66",
+    "accent": "#f2541b",
+    "accent-strong": "#d94210",
+    "accent-soft": "#e8683a",
+    "on-accent": "#ffffff",
+    "success": "#1f8a49",
+    "warning": "#c98a12",
+    "danger": "#d9342b",
+    "glow-base": "#f4f3ef",
+    "glow-deep": "#f6e6dc",
+    "glow": "#ff9a70"
+  },
+  "font": "'Helvetica Neue', Helvetica, Arial, ui-sans-serif, system-ui, sans-serif",
+  "radius": "16px"
+}

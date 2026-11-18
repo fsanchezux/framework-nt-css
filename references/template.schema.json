@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "framework-nt-css template manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "contract",
+    "description",
+    "slots"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "contract": {
+      "const": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "bestFor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "layout": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "slots": {
+      "type": "object",
+      "required": [
+        "brand",
+        "modes",
+        "nav",
+        "panel",
+        "footer",
+        "user",
+        "actions",
+        "content"
+      ],
+      "properties": {
+        "brand": {
+          "type": "string",
+          "description": "Marca: { name, highlight?, logo?, onClick? }"
+        },
+        "modes": {
+          "type": "string",
+          "description": "Entornos/espacios de primer nivel: [{ id, label, icon, badge? }] + mode + onModeChange(id)"
+        },
+        "nav": {
+          "type": "string",
+          "description": "Navegación: [{ id, label?, collapsible?, action?: { label, icon, onClick }, empty?, items: [{ id, label, icon?, meta?, badge?, onSelect? }] }] + activeId + onNavigate(id, item)"
+        },
+        "panel": {
+          "type": "string",
+          "description": "JSX libre de la navegación (p. ej. lista de conversaciones, filtros). Va debajo de nav."
+        },
+        "footer": {
+          "type": "string",
+          "description": "JSX del pie de la navegación (selector de liga, equipo, ajustes…)."
+        },
+        "user": {
+          "type": "string",
+          "description": "Cuenta: { name, avatar?, meta?, menu?: [{ label, icon, onSelect, danger? }] }"
+        },
+        "actions": {
+          "type": "string",
+          "description": "JSX de acciones globales arriba a la derecha (botones, buscador…)."
+        },
+        "content": {
+          "type": "string",
+          "description": "children: la página activa (siempre dentro de <Page>)."
+        }
+      }
+    },
+    "options": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "default": {},
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "motion": {
+      "type": "string"
+    }
+  }
+}

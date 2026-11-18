@@ -1,0 +1,68 @@
+{
+  "name": "framework-nt-css",
+  "version": "0.1.0",
+  "description": "Framework de UI compartido (plantillas + temas + componentes + animaciones GSAP) para crear proyectos con la estructura de Hoopbase. Se distribuye como Agent Skill multiplataforma.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "nt": "./scripts/nt.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./vite": "./src/vite/plugin.js",
+    "./styles.css": "./src/styles/index.css",
+    "./standalone.css": "./src/styles/standalone.css",
+    "./icons": {
+      "types": "./src/icons.d.ts",
+      "default": "./src/icons.js"
+    },
+    "./tokens": "./src/theme/tokens.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "templates",
+    "themes",
+    "scripts",
+    "starter",
+    "studio",
+    "references",
+    "SKILL.md",
+    "AGENTS.md"
+  ],
+  "scripts": {
+    "studio": "node scripts/nt.mjs theme",
+    "dev": "vite --config studio/vite.config.js",
+    "build:studio": "vite build --config studio/vite.config.js",
+    "check": "node scripts/nt.mjs doctor studio && node --test tests/*.test.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "peerDependencies": {
+    "react": ">=19",
+    "react-dom": ">=19"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@tailwindcss/node": "4.3.5",
+    "@tailwindcss/oxide": "4.3.5",
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^6.3.0",
+    "clsx": "^2.1.1",
+    "gsap": "^3.15.1",
+    "lucide-react": "^1.75.0",
+    "tailwind-merge": "^3.7.0",
+    "tailwindcss": "^4.3.5"
+  },
+  "devDependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vite": "^8.3.8"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "types": "./src/index.d.ts"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "__NAME__",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "theme": "node __FRAMEWORK__/scripts/nt.mjs theme --project .",
+    "nt": "node __FRAMEWORK__/scripts/nt.mjs"
+  },
+  "dependencies": {
+    "framework-nt-css": "file:__FRAMEWORK__"
+  },
+  "devDependencies": {}
+}

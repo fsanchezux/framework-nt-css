@@ -1,0 +1,26 @@
+{
+  "$schema": "../references/theme.schema.json",
+  "id": "esmaix",
+  "name": "Esmaix (Hoopbase)",
+  "description": "Tema original de Hoopbase: negro con acento naranja y degradado encendido abajo.",
+  "scheme": "dark",
+  "colors": {
+    "canvas": "#101010",
+    "sidebar": "#0a0a0a",
+    "paper": "#1b1b1b",
+    "ink": "#f4f4f2",
+    "muted": "#9a9a96",
+    "accent": "#ff6129",
+    "accent-strong": "#fc3b00",
+    "accent-soft": "#ff7145",
+    "on-accent": "#ffffff",
+    "success": "#2f9e57",
+    "warning": "#f5b031",
+    "danger": "#ff4d3d",
+    "glow-base": "#000000",
+    "glow-deep": "#2a0b03",
+    "glow": "#fc3b00"
+  },
+  "font": "'Helvetica Neue', Helvetica, Arial, ui-sans-serif, system-ui, sans-serif",
+  "radius": "16px"
+}

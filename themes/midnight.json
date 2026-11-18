@@ -1,0 +1,26 @@
+{
+  "$schema": "../references/theme.schema.json",
+  "id": "midnight",
+  "name": "Midnight",
+  "description": "",
+  "scheme": "dark",
+  "colors": {
+    "canvas": "#0b0f17",
+    "sidebar": "#070a10",
+    "paper": "#141a26",
+    "ink": "#eef2fb",
+    "muted": "#8b95aa",
+    "accent": "#4f7cff",
+    "accent-strong": "#2f5df0",
+    "accent-soft": "#8aa6ff",
+    "on-accent": "#ffffff",
+    "success": "#2fb37a",
+    "warning": "#f2b64a",
+    "danger": "#ff5a6a",
+    "glow-base": "#05070c",
+    "glow-deep": "#0b1430",
+    "glow": "#2f5df0"
+  },
+  "font": "'Helvetica Neue', Helvetica, Arial, ui-sans-serif, system-ui, sans-serif",
+  "radius": "16px"
+}

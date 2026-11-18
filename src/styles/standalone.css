@@ -1,0 +1,6 @@
+/*
+ * Entrada para compilar el CSS del framework sin depender de la tecnología del proyecto (nt css / nt apply).
+ * source(none): no escanea el proyecto, solo el framework (los @source de framework.css).
+ */
+@import "tailwindcss" source(none);
+@import "./framework.css";
