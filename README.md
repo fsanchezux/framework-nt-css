@@ -88,7 +88,9 @@ El kit no es una imitación: el HTML se genera **renderizando los mismos compone
 ## Instalación (una sola vez)
 
 ```powershell
-cd C:\Users\ferry\Documents\framework-nt-css
+cd C:\dev
+git clone https://github.com/fsanchezux/framework-nt-css.git
+cd framework-nt-css
 npm install
 ```
 
@@ -101,13 +103,13 @@ node scripts/nt.mjs install-skill
 Crea enlaces en `~/.claude/skills/framework-nt-css` y `~/.agents/skills/framework-nt-css`. Al ser enlaces, cualquier cambio en el framework llega al instante.
 
 > [!TIP]
-> En los ejemplos, `nt` significa `node C:\Users\ferry\Documents\framework-nt-css\scripts\nt.mjs`. Dentro de un proyecto que ya tiene el framework como dependencia puedes usar directamente `npx nt …`.
+> En los ejemplos, `nt` significa `node C:\dev\framework-nt-css\scripts\nt.mjs` (cambia `C:\dev` por la carpeta donde lo hayas clonado). Dentro de un proyecto que ya tiene el framework como dependencia puedes usar directamente `npx nt …`.
 
 ---
 
 ## Usarlo en un proyecto que ya existe
 
-Ejemplo con `wishlist-nt` (Next.js), que está al lado del framework en `Documents`.
+Ejemplo con `wishlist-nt` (Next.js), que está al lado del framework en `C:\dev`.
 
 ### 1 · Conectar
 
@@ -116,7 +118,7 @@ node scripts/nt.mjs connect ..\wishlist-nt
 ```
 
 ```text
-✔ Conectado: C:\Users\ferry\Documents\wishlist-nt
+✔ Conectado: C:\dev\wishlist-nt
   tecnología: Next.js 16.4.6 → adaptador "next" · TypeScript · Tailwind 4
   marca: WHISLIT · usuario: sí (supabase)
   páginas (4):
